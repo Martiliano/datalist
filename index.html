@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>GiroVendas Pedidos</title>
+    <meta name="description" content="Html DataList Example">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Html DataList Example">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container_all">
+
+            <div class="product_content">
+                <h2>Search product by name:</h2>
+            </div>
+
+            <div class="product_content w100">
+                <div class="product_item w100">
+                    <input type="text" id="search_name" name="search_name" list="prod_list" class="input_item"
+                        placeholder="Search product by name" autocomplete="on" />
+                    <datalist id="prod_list">
+                        <option value="0" data-code="0">Product name to search</option>
+                    </datalist>
+                </div>
+
+            </div>
+
+            <div class="product_content">
+                <h2>Product Data:</h2>
+            </div>
+
+            <div class="product_content w100">
+                <div class="product_item w100">
+                    <input type="text" id="prod_name" name="prod_name" class="input_item" placeholder="Product name"
+                        autocomplete="on" readonly />
+                </div>
+
+            </div>
+
+            <div class="product_content w100">
+                <div class="product_item w50">
+                    <input type="text" id="prod_department" name="prod_department" class="input_item"
+                        placeholder="Product department" autocomplete="on" readonly />
+                </div>
+
+                <div class="product_item w50">
+                    <input type="text" id="prod_price" name="prod_price" class="input_item" placeholder="Product price"
+                        autocomplete="on" readonly />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
